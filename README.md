@@ -1,13 +1,33 @@
-Kütahya Merkez Ve İlçelerin Ezan vakitlerini Gösterir
+# 🕌 Kütahya Namaz & Oruç Takvimi
 
+Bu proje, **Kütahya ve ilçeleri için namaz vakitlerini ve Ramazan’a kalan süreyi** gösteren, siyah neon temalı bir web uygulamasıdır. Ayrıca bildirim sistemi sayesinde kullanıcı, test veya namaz vakti bildirimleri alabilir.
 
+---
 
+## Özellikler
 
+- **İlçe Seçimi:** Kütahya ve 12 ilçesinden seçim yapabilirsiniz.
+- **Bugünün Namaz Vakitleri:** İmsak, Güneş, Öğle, İkindi, Akşam, Yatsı detaylı olarak gösterilir.
+- **Ramazan Geri Sayımı:** Ramazan’ın başlamasına kalan gün, saat, dakika ve saniye otomatik hesaplanır.
+- **Bildirim Sistemi:** Kullanıcı izin verirse test bildirimi gönderilir. Daha sonra namaz ve oruç hatırlatmaları eklenebilir.
+- **Siyah Neon Tasarım:** Modern ve mobil uyumlu, gözü yormayan bir tasarım.
+- **Footer ve GitHub Bağlantısı:** Proje sahibi bilgisi ve diğer projelere yönlendirme.
 
+---
 
+## Teknolojiler
 
- BU PROJE TÜM TÜRKİYE İL VE İLÇELERİ İÇİN YENİ SÜRÜMÜ GELECEKTİR
+- HTML, CSS, JavaScript
+- [Aladhan API](https://aladhan.com/prayer-times-api) — Namaz vakitlerini almak için kullanılır
+- Responsive tasarım, mobil ve masaüstü uyumlu
 
-  
-  
-  <img width="200" height="168" alt="images" src="https://github.com/user-attachments/assets/62fb6374-5aa0-4c2f-909e-620f86fa4b45" />
+---
+
+## Kullanım
+
+1. Bu projeyi klonlayın veya indirin:
+
+```bash
+git clone https://github.com/FOXYorj/KutahyaNamazOrucTakvimi.git
+
+ -Yakında TÜM TÜRKİYEDEKİ İLLER VE İLÇELER VERSYONU GELECEKTİR -
