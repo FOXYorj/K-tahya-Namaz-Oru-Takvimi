@@ -156,6 +156,7 @@ async function getTimes() {
       let diff = ramazan - now;
       if (diff <= 0) {
         document.getElementById("countdown").innerHTML = "<span class='highlight'>Oruç başladı!</span>";
+        sendNotification("Oruç başladı!", "Ramazan başladı, hayırlı olsun!");
         return;
       }
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -175,8 +176,27 @@ async function getTimes() {
   }
 }
 
-// Sayfa yüklendiğinde otomatik verileri al
-getTimes();
+// Bildirim izni ve test bildirimi
+function sendNotification(title, body) {
+  if (Notification.permission === "granted") {
+    new Notification(title, { body: body });
+  }
+}
+
+function requestNotification() {
+  if (!("Notification" in window)) return;
+  Notification.requestPermission().then(permission => {
+    if (permission === "granted") {
+      sendNotification("Test Bildirimi", "Bildirim sistemi çalışıyor! ✅");
+    }
+  });
+}
+
+// Sayfa yüklendiğinde otomatik verileri al ve bildirim izni iste
+window.onload = () => {
+  getTimes();
+  requestNotification();
+};
 </script>
 </body>
 </html>
